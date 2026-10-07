@@ -22,10 +22,10 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // ===== SESSION =====
- //app.use(require('./config/session'));
+app.use(require('./config/session'));
 
 
 // ===== ROUTES =====
-// app.use('/', require('./routes/books'));
+app.use('/', require('./routes/books'));
 
 app.listen(PORT, () => console.log(`🚀 Server chạy tại cổng ${PORT}`));
